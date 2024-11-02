@@ -1,0 +1,127 @@
+@font-face {
+    font-family: New Athletic;
+    src: url(../fonts/New\ Athletic.ttf);
+}
+
+@font-face {
+    font-family: Simple Melody;
+    src: url(../fonts/Simple\ Melody.ttf);
+}
+
+@font-face {
+    font-family: MontBlanc;
+    src: url(../fonts/MontBlanc.ttf);
+}
+
+@font-face {
+    font-family: Madeleina;
+    src: url(../fonts/Madeleina.ttf);
+}
+
+* {
+    font-family: 'New Athletic';
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #262931;
+    z-index: 2;
+}
+
+.logo {
+    height: 60px;
+    padding-left: 1rem;
+  padding-top: 20px ;
+  border-radius: 10px;
+}
+
+.header>div>ul {
+    display: flex;
+    font-size: 1.5rem;
+    padding-right: 5rem;
+}
+
+.header>div>ul>li {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.header>div>ul>li>a {
+    
+    text-decoration: none;
+    color: #fff;
+}
+
+.header>div>ul>li>a:hover {
+    color: #127b8e;
+    transition: color 500ms;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    background-color: #262931;
+    width: 170px;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    z-index: 1;
+    position: fixed;
+}
+
+.sidenav>ul {
+    margin: 4rem 0 0 0;
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidenav>ul>li>a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    line-height: 4rem;
+ 
+}
+
+.sidenav>ul>li>a:hover {
+    color: #127b8e;
+    transition: color 500ms;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #262931;
+    margin-left: 170px;
+}
+
+.footer>ul {
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    padding-left: 70px;
+}
+
+.footer>ul>li {
+    color: #fff;
+    list-style: none;
+    padding: 0 90px;
+}
+
+.btn:hover {
+    color: #127b8e;
+    transition: color 500ms;
+    cursor: pointer;
+}
